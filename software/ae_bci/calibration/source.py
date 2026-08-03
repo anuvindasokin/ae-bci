@@ -15,5 +15,6 @@ def normalise_by_source_current(
     try:
         return np.asarray(response / current, dtype=float)
     except ValueError as error:
-        raise ValueError("Response and current are not broadcast-compatible.") from error
-
+        raise ValueError(
+            "Response and current are not broadcast-compatible."
+        ) from error

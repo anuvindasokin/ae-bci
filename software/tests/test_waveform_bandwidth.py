@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from ae_bci.signal_processing.filtering import validate_waveform_bandwidth
 
 

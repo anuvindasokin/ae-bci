@@ -1,5 +1,4 @@
 import pytest
-
 from ae_bci.analysis.frequency_comparison import compare_carrier_configuration
 
 

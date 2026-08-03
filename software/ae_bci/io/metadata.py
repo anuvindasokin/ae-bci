@@ -44,7 +44,10 @@ class ExperimentMetadata(BaseModel):
     def reference_matches_carrier(self) -> "ExperimentMetadata":
         """Require a coherent lock-in reference at the selected carrier."""
         tolerance_hz = max(0.1, self.carrier_frequency_hz * 1e-6)
-        if abs(self.lockin_reference_frequency_hz - self.carrier_frequency_hz) > tolerance_hz:
+        reference_error_hz = abs(
+            self.lockin_reference_frequency_hz - self.carrier_frequency_hz
+        )
+        if reference_error_hz > tolerance_hz:
             raise ValueError("Lock-in reference does not match carrier frequency.")
         if self.source_frequency_hz >= self.carrier_frequency_hz:
             raise ValueError("Source frequency must be lower than carrier frequency.")
@@ -61,4 +64,3 @@ def load_metadata(path: str | Path) -> ExperimentMetadata:
     if not isinstance(raw, dict):
         raise ValueError("Metadata document must contain a YAML mapping.")
     return ExperimentMetadata.model_validate(raw)
-

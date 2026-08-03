@@ -15,5 +15,6 @@ def normalise_by_pressure(
     try:
         return np.asarray(response / pressure, dtype=float)
     except ValueError as error:
-        raise ValueError("Response and pressure are not broadcast-compatible.") from error
-
+        raise ValueError(
+            "Response and pressure are not broadcast-compatible."
+        ) from error

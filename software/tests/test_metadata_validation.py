@@ -1,9 +1,8 @@
 from datetime import date
 
 import pytest
-from pydantic import ValidationError
-
 from ae_bci.io.metadata import ExperimentMetadata
+from pydantic import ValidationError
 
 
 def valid_metadata():

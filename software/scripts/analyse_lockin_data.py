@@ -3,7 +3,6 @@
 import argparse
 
 import pandas as pd
-
 from ae_bci.signal_processing.phase_rotation import rotate_lockin_xy
 
 parser = argparse.ArgumentParser()

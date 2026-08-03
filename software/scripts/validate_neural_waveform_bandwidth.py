@@ -1,6 +1,7 @@
 """Validate a one-column waveform CSV against 10 Hz–8 kHz."""
 
 import argparse
+
 import pandas as pd
 from ae_bci.signal_processing.filtering import validate_waveform_bandwidth
 

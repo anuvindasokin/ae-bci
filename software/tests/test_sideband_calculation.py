@@ -1,5 +1,4 @@
 import pytest
-
 from ae_bci.signal_processing.sidebands import calculate_sidebands
 
 
@@ -18,8 +17,9 @@ def test_sidebands(carrier, source, expected):
     assert calculate_sidebands(carrier, source) == expected
 
 
-@pytest.mark.parametrize("carrier,source", [(-1, 10), (500_000, -1), (100, 100), (100, 101)])
+@pytest.mark.parametrize(
+    "carrier,source", [(-1, 10), (500_000, -1), (100, 100), (100, 101)]
+)
 def test_invalid_frequencies(carrier, source):
     with pytest.raises(ValueError):
         calculate_sidebands(carrier, source)
-

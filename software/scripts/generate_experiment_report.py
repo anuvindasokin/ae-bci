@@ -2,6 +2,7 @@
 
 import argparse
 from pathlib import Path
+
 from ae_bci.io.metadata import load_metadata
 
 parser = argparse.ArgumentParser()

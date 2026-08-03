@@ -1,6 +1,7 @@
 """Export a spatial point plot from CSV without overwriting."""
 
 import argparse
+
 import pandas as pd
 from ae_bci.visualisation.report_figures import export_figure
 from ae_bci.visualisation.spatial_plots import plot_spatial_points

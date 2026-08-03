@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from ae_bci.signal_processing.frequency_response import (
     calculate_frequency_response,
     estimate_group_delay,

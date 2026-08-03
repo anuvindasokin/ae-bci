@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from ae_bci.signal_processing.baseline_subtraction import subtract_xy_offset
 from ae_bci.signal_processing.phase_rotation import rotate_lockin_xy
 
