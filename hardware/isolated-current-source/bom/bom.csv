@@ -1,0 +1,4 @@
+Item Number,Subsystem,Reference,Manufacturer,Manufacturer Part Number,Description,Quantity,Unit Cost,Supplier,Supplier SKU,Lifecycle Status,RoHS Status,Datasheet,Alternative Part,Calibration Required,Safety Critical,Notes,Verified By,Verification Date
+TBD-001,Isolated current source,TBD,TBD,TBD,Precision current-sense resistor,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Yes,Yes,Value and rating TBD,TBD,TBD
+TBD-002,Isolated current source,TBD,TBD,TBD,Source-driver components,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Yes,Yes,Selection pending verified requirements,TBD,TBD
+

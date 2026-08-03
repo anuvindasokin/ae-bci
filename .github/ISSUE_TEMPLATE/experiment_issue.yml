@@ -1,0 +1,30 @@
+name: Experiment
+description: Plan a controlled phantom or ex-vivo experiment.
+title: "experiment: "
+labels: [experiment]
+body:
+  - type: textarea
+    id: objective
+    attributes: {label: Objective and hypothesis}
+    validations: {required: true}
+  - type: textarea
+    id: protocol
+    attributes: {label: Protocol, description: Include carrier/source frequency, waveform, equipment and geometry.}
+    validations: {required: true}
+  - type: textarea
+    id: variables
+    attributes: {label: Independent and controlled variables}
+    validations: {required: true}
+  - type: textarea
+    id: controls
+    attributes: {label: Controls and expected result}
+    validations: {required: true}
+  - type: textarea
+    id: safety
+    attributes: {label: Safety checks and phantom-only confirmation}
+    validations: {required: true}
+  - type: textarea
+    id: data
+    attributes: {label: Data location and acceptance criteria}
+    validations: {required: true}
+

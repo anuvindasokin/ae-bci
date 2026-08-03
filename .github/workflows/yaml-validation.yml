@@ -1,0 +1,16 @@
+name: YAML validation
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install yamllint pyyaml
+      - run: 'yamllint -d "{extends: default, rules: {line-length: disable, document-start: disable}}" .'
+      - run: python -c "import pathlib,yaml; [yaml.safe_load(p.read_text(encoding='utf-8')) for p in list(pathlib.Path('.').rglob('*.yml'))+list(pathlib.Path('.').rglob('*.yaml'))]"

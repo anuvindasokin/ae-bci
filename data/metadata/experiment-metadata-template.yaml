@@ -1,0 +1,26 @@
+schema_version: "1.0"
+experiment_id: AE-TEMPLATE-001
+acquisition_date: 2026-01-01
+acquisition_git_commit: abcdef1
+dataset_type: synthetic
+carrier_frequency_hz: 500000
+lockin_reference_frequency_hz: 500000
+source_frequency_hz: 1000
+source_waveform: sine
+source_id: SRC-TBD
+source_current_a_rms: 0.000001
+receiver_id: RX-TBD
+ultrasound_configuration_id: US-500-TBD
+controls:
+  - baseline
+  - source_only
+  - ultrasound_only
+  - combined
+calibration_references:
+  source_current: CAL-SRC-TBD
+  receiver_transfer_function: CAL-RX-TBD
+  transducer_pressure: CAL-US-TBD
+  lockin: CAL-LI-TBD
+operator: TEMPLATE
+notes: "Template values are synthetic placeholders; replace every field."
+

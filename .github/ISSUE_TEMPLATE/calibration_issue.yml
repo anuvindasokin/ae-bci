@@ -1,0 +1,18 @@
+name: Calibration
+description: Plan or review an instrument/configuration calibration.
+title: "calibration: "
+labels: [calibration]
+body:
+  - type: textarea
+    id: instrument
+    attributes: {label: Instrument and configuration}
+    validations: {required: true}
+  - type: textarea
+    id: method
+    attributes: {label: Frequency, method, reference standard, and environment}
+    validations: {required: true}
+  - type: textarea
+    id: result
+    attributes: {label: Raw-data location, acceptance criteria, and recalibration date}
+    validations: {required: true}
+

@@ -1,0 +1,9 @@
+Item Number,Subsystem,Reference,Manufacturer,Manufacturer Part Number,Description,Quantity,Unit Cost,Supplier,Supplier SKU,Lifecycle Status,RoHS Status,Datasheet,Alternative Part,Calibration Required,Safety Critical,Notes,Verified By,Verification Date
+TBD-001,Internal neural source,TBD,TBD,TBD,PTFE-insulated PtIr wire,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Yes,Yes,Pt90/Ir10 or equivalent; verify,TBD,TBD
+TBD-002,Internal neural source,TBD,TBD,TBD,PEEK or acetal electrode holder,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Yes,No,Material selection TBD,TBD,TBD
+TBD-003,Internal neural source,TBD,TBD,TBD,Insulating epoxy,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,No,Yes,Compatibility and sealing TBD,TBD,TBD
+TBD-004,Internal neural source,TBD,TBD,TBD,Shielded twisted-pair cable,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Yes,No,Capacitance TBD,TBD,TBD
+TBD-005,Internal neural source,TBD,TBD,TBD,Sealed feedthrough connector,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Yes,Yes,No shared return,TBD,TBD
+TBD-006,Internal neural source,TBD,TBD,TBD,Strain relief and labels,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,No,No,TBD,TBD,TBD
+TBD-007,Source calibration,TBD,TBD,TBD,Calibration fixture,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Yes,No,TBD,TBD,TBD
+

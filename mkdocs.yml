@@ -1,0 +1,65 @@
+site_name: "AE-BCI"
+site_description: "Research documentation for acoustoelectric heterodyne recording"
+repo_url: "https://github.com/anuvindasokin/ae-bci"
+theme:
+  name: material
+  features:
+    - navigation.sections
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - Home: index.md
+  - Project Overview:
+      - Overview: project-overview.md
+      - Scope: project-scope.md
+      - Terminology: terminology.md
+      - Research questions: research-questions.md
+  - Theory:
+      - Acoustoelectric effect: theory/acoustoelectric-effect.md
+      - Heterodyne detection: theory/heterodyne-detection.md
+      - Carrier sidebands: theory/carrier-sidebands.md
+      - Signal model: theory/signal-model.md
+      - Assumptions and limitations: theory/assumptions-and-limitations.md
+  - System Architecture:
+      - System architecture: architecture/system-architecture.md
+      - Signal flow: architecture/signal-flow.md
+      - Interfaces: architecture/system-interfaces.md
+      - Artefact pathways: architecture/artefact-pathways.md
+  - Ultrasound Configurations:
+      - Frequency strategy: ultrasound/frequency-strategy.md
+      - Configuration requirements: ultrasound/transducer-configurations.md
+      - Frequency comparison: ultrasound/frequency-comparison.md
+  - Neural-Equivalent Source:
+      - Overview: neural-source/internal-source-overview.md
+      - PtIr dipole: neural-source/ptir-dipole-design.md
+      - Bandwidth: neural-source/source-bandwidth.md
+  - Receiver and Lock-In:
+      - Receiver: receiver/receiver-overview.md
+      - Front-end: receiver/preamplifier-requirements.md
+      - Lock-in: receiver/lockin-amplifier.md
+      - Phase calibration: receiver/phase-calibration.md
+  - Experiments:
+      - Roadmap: experiments/experimental-roadmap.md
+      - Controls: experiments/control-experiments.md
+      - Electronic loopback: experiments/electronic-loopback-test.md
+      - Carrier comparison: experiments/carrier-frequency-comparison.md
+  - Calibration: calibration/calibration-overview.md
+  - Hardware: hardware.md
+  - Software: software.md
+  - Data: data.md
+  - Safety:
+      - Overview: safety/safety-overview.md
+      - Phantom-only restriction: safety/phantom-only-restriction.md
+  - Development Roadmap:
+      - Roadmap: development/roadmap.md
+      - Decisions: development/design-decisions.md
+      - TBD register: development/tbd-register.md
+      - Assumptions: development/assumptions.md
+      - Validation status: development/validation-status.md
+  - References: references.md

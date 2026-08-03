@@ -1,0 +1,22 @@
+name: Software bug
+description: Report a reproducible software or documentation-tooling defect.
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes: {label: Problem, description: Describe observed and expected behaviour.}
+    validations: {required: true}
+  - type: textarea
+    id: reproduction
+    attributes: {label: Reproduction, description: Include commands and minimal permitted data.}
+    validations: {required: true}
+  - type: input
+    id: commit
+    attributes: {label: Commit and environment}
+    validations: {required: true}
+  - type: textarea
+    id: impact
+    attributes: {label: Research integrity and safety impact}
+    validations: {required: true}
+

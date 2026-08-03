@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Citation metadata is preliminary; verify before citing."
+title: "AE-BCI: Acoustoelectric Heterodyne Neural Recording"
+type: software
+authors:
+  - name: "AE-BCI contributors"
+version: 0.1.0
+repository-code: "https://github.com/anuvindasokin/ae-bci"
+license: "LicenseRef-TBD"
+

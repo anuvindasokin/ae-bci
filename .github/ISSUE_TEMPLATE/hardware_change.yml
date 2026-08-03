@@ -1,0 +1,18 @@
+name: Hardware change
+description: Propose a controlled hardware revision.
+title: "hardware: "
+labels: [hardware]
+body:
+  - type: textarea
+    id: change
+    attributes: {label: Subsystem, current revision, proposed change, and reason}
+    validations: {required: true}
+  - type: textarea
+    id: impact
+    attributes: {label: Electrical, mechanical, signal-integrity, frequency-range, and safety impact}
+    validations: {required: true}
+  - type: textarea
+    id: verification
+    attributes: {label: Verification plan and documentation updates}
+    validations: {required: true}
+

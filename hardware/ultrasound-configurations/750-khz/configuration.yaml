@@ -1,0 +1,14 @@
+schema_version: "1.0"
+configuration_id: US-750-TBD
+status: proposed
+carrier_frequency_hz: 750000
+transducer: TBD
+matching_network: TBD
+rf_amplifier: TBD
+hydrophone_calibration: TBD
+pressure_map: TBD
+thermal_characterisation: TBD
+receiver_transfer_function: TBD
+lockin_settings: TBD
+artefact_controls: TBD
+
